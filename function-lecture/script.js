@@ -87,7 +87,8 @@ console.log(makeMultiplier(7))
 timer = {
     seconds: 0,
     start() {
-        set(() => setInterval( () => console.log(this.seconds++), 1000), 5000)
+        let frequencyLogger = setInterval( () => console.log(this.seconds+=1), 1000)
+        setTimeout(() => clearInterval(frequencyLogger), 6000)
     }
 }
 
