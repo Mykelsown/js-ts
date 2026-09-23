@@ -91,5 +91,10 @@ timer = {
         setTimeout(() => clearInterval(frequencyLogger), 6000)
     }
 }
-
 timer.start()
+
+person = {
+    name: "mykels",
+    logName: () => console.log(this.name)
+}
+person.logName()
